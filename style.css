@@ -1,0 +1,180 @@
+/*
+Theme Name: Portfolio
+Theme URI:
+Author: Gurpreet Raju
+Author URI: http://thetraleblazer.com/gurpreetraju
+Description: The Portfolio 2018 theme for WordPress is a custom developed theme from Gurpreet Raju.
+
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: portfolio
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&text=!");
+@import url("https://fonts.googleapis.com/css?family=Seaweed+Script");
+@import url("css/open-iconic-bootstrap.min.css");
+@import url("css/bootstrap.min.css");
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url('fonts/Pacifico.ttf');
+}
+a{
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Left sidebar */
+.left-sidebar{
+  width: 300px;
+  display: inline-block;
+}
+.left-sidebar .text-white a{
+  color: inherit;
+}
+
+/* Custom logo */
+.css-logo{
+  display: block;
+  height: 204px;
+  width: 204px;
+  overflow: hidden;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: #212e41;
+}
+.css-logo span{
+  line-height: 1;
+  display: block;
+  position: relative;
+  top: -30px;
+  left: -15px;
+  font-size: 270px;
+  font-weight: bold;
+}
+
+/* Sidebar - Social Icons */
+.social-icons-wrapper{
+  text-align: center;
+}
+.social-icons{
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icons div{
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-size: contain;
+  width: 50px;
+  height:50px;
+  position:relative;
+  -webkit-transition: top 0.5s, box-shadow 0.5s; /* Safari */
+  transition: top 0.5s, box-shadow 0.5s;
+  box-shadow: 0px 0px 0px #000;
+  top: 0px;
+}
+.social-icons:last-child{
+  margin-right: 0;
+}
+.social-icons:hover div{
+  box-shadow: 0px 4px 4px -1px #000;
+  top: -2px;
+}
+
+/* Sidebar logo and details */
+.details{
+  text-align: center;
+}
+.details .name{
+  display: block;
+  font-family: 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 30px;
+  text-shadow: 0px 2px 0px #0054db;
+}
+.details .tagline{
+  display: block;
+  font-family: "Seaweed Script";
+  font-size: 23px;
+  color: #0054db;
+}
+
+/* Sidebar io menu*/
+.menu ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.menu li a{
+  display: block;
+  padding: 25px 0;
+  text-align: center;
+  color: inherit;
+}
+.menu li a:hover{
+  background: #212e41;
+  text-decoration: none;
+}
+.oi {
+  margin-right: 10px;
+}
+
+/* right-content */
+.right-content{
+  width: calc(100% - 300px);
+  display: block;
+  float: right;
+}
+
+
+/* post */
+.btn
+{
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+}
+.btn-read-more
+{
+  padding: 5px;
+  text-align: center;
+  border-radius: 0px;
+  display: inline-block;
+  border: 2px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color:#fff;
+}
+
+.btn-read-more:hover
+{
+  color: #777;
+  background: #fff;
+}
+.post {
+  border-bottom:1px solid #777;
+}
+.post-title {
+  color:#fff;
+  border-bottom:1px solid #777;
+}
+.post-header-line {
+  padding:5px 0px 5px 15px;
+  font-size: 12px;
+}
+.post-content {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #111;
+}
